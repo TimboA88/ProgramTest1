@@ -60,7 +60,6 @@ namespace Program
         }
         public static void PlayerTurn(string turn)
         {
-            //TODO: Check if Valid Function and Loop
             // Varriables
             ConsoleKeyInfo cki;
             int inputed;
@@ -70,7 +69,7 @@ namespace Program
             Console.WriteLine("Player " + turn + "'s turn");
             cki = Console.ReadKey();
 
-            // Try to parse
+            // Try to parse and run the function again if fail
             try
             {
                 int.Parse(cki.KeyChar.ToString());
