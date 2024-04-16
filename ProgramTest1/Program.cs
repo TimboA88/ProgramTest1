@@ -83,7 +83,7 @@ namespace Program
             // Converts the Player Input to an Int to lookup an item in the list
             inputed = int.Parse(cki.KeyChar.ToString());
             // check if the slot is valid, also make sure the selected is not 0
-            if (inputed == 0 | !(slots[inputed - 1] == "-"))
+            if (inputed == 0 || !(slots[inputed - 1] == "-"))
             {
                 Console.WriteLine("Invalid Key Pressed, press key 1-9");
                 PlayerTurn(turn);
